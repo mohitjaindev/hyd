@@ -1,0 +1,229 @@
+/*
+Author       : LitmusThemes
+Template Name: Angles - Multipurpose One & Multi Page HTML5 template - ThemeForest
+Version      : 1.0
+*/
+
+
+/*==============================================
+01. GENERAL CSS
+================================================*/
+
+html, 
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-ms-font-smoothing: antialiased;
+	font-smoothing: antialiased; /* Fix for webkit rendering */
+	-webkit-text-size-adjust: 100%;
+}
+body {
+	font: 16px/1.625 'Open Sans', Arial, Helvetica, sans-serif;
+	color: #333;
+	font-weight: normal;
+}
+img {
+	vertical-align: top;
+	border: 0;
+	max-width: 100%;
+}
+a {
+	-moz-transition: background-color 550ms cubic-bezier(0.450, 1.000, 0.320, 1.000), color 550ms cubic-bezier(0.450, 1.000, 0.320, 1.000);
+	-webkit-transition: background-color 550ms cubic-bezier(0.450, 1.000, 0.320, 1.000), color 550ms cubic-bezier(0.450, 1.000, 0.320, 1.000);
+	-o-transition: background-color 0.2s ease-in, color 0.2s ease-in;
+	-ms-transition: background-color 550ms cubic-bezier(0.450, 1.000, 0.320, 1.000), color 550ms cubic-bezier(0.450, 1.000, 0.320, 1.000);
+	transition: background-color 550ms cubic-bezier(0.450, 1.000, 0.320, 1.000), color 550ms cubic-bezier(0.450, 1.000, 0.320, 1.000);
+}
+.alltrans, 
+.btn {
+	-moz-transition: all 550ms cubic-bezier(0.450, 1.000, 0.320, 1.000);
+	-webkit-transition: all 550ms cubic-bezier(0.450, 1.000, 0.320, 1.000);
+	-o-transition: all 550ms cubic-bezier(0.450, 1.000, 0.320, 1.000);
+	-ms-transition: all 550ms cubic-bezier(0.450, 1.000, 0.320, 1.000);
+	transition: all 550ms cubic-bezier(0.450, 1.000, 0.320, 1.000);
+}
+a {
+	color: #3a9ac8;
+	text-decoration: none;
+}
+a:hover, 
+a:focus {
+	color: #3a9ac8;
+	outline: none;
+	text-decoration: underline;
+}
+* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+*:before, 
+*:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+@media screen and (-ms-high-contrast:active), (-ms-high-contrast:none) {
+a:active {
+	background-color: transparent;
+}
+}
+strong {
+	font-weight: bold;
+}
+small, 
+.small {
+	font-size: 85%;
+}
+sub, 
+sup {
+	font-size: 80%
+}
+p {
+	margin: 0 0 15px;
+}
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+	line-height: 1.3;
+	margin: 0 0 15px;
+	font-weight: 800;
+	color: #333;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+h1, 
+h2 {
+	font-size: 32px;
+}
+h3 {
+	font-size: 30px;
+	font-weight: 600;
+}
+h4 {
+	font-size: 26px;
+	font-weight: 600;
+}
+h5 {
+	font-size: 22px;
+	margin-bottom: 10px;
+	font-weight: 600;
+}
+h6 {
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 10px;
+	font-weight: 600;
+}
+
+.doc-sidebar {
+	background:#242424;
+	color:#fff;
+	position:fixed;
+	overflow-y:auto;
+	height:100vh;
+	width:270px;
+	left:0;
+	top:0;
+	padding:40px 0;
+}
+#logo {
+	max-width:160px;
+	width:100%;
+	margin:0 auto 50px;
+	display:block;	
+}
+
+.doc-wrapper {
+	padding:30px 40px 40px 320px;	
+}
+.doc-sidenav ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.doc-sidenav ul li a {
+	color:#fff;
+	padding:10px 30px 11px;
+	display:block;
+	text-decoration:none;
+	text-align:right;
+	font-size:16px;
+	background:rgba(255,255,255,0.08);	
+}
+.doc-sidenav ul li.active a {
+	background:#3a9ac8;
+}
+.doc-sidenav ul li {
+	margin-bottom:1px;	
+}
+.doc-title:after {
+	font-size: 32px;
+	content:'';
+	display:block;
+	margin:12px 0 0;
+	background:#3a9ac8;
+	height:4px;
+	width:50px;	
+}
+.doc-title {
+	margin-bottom:25px;	
+}
+.doc-title span {
+	color:#3a9ac8;
+	display:block;
+	font-size:40px;
+	margin-bottom:5px;
+}
+.jumbotron {
+	background:#eee;
+	padding:20px;
+	border-radius:5px;
+	color:#333;
+	margin:40px 0 30px;
+}
+.jumbotron p {
+	margin:0;	
+}
+.jumbotron i {
+	color:#e13f6a;
+	font-size:20px;
+	margin-right:5px;
+	position:relative;
+	top:1px;	
+}
+.intro-list {
+	margin:20px 0 40px;
+	padding:0 0 0 20px;
+	line-height:1.8;
+	font-size:15px;
+	font-weight:600;
+}
+pre {
+	text-align: left;
+    white-space: pre-line;
+	background:#eee;
+	line-height:1;
+	padding:0 20px;
+}
+pre span {
+	display:block;	
+}
+pre strong {
+	display:block;	
+}
+.file-name {
+	background:#333;
+	color:#fff;
+	border-radius:2px;
+	padding:2px 7px;
+	margin-bottom:5px;
+	display:inline-block;
+	font-size:0.9em;
+	margin-right:5px;
+}
+.source-link {
+	display:table;
+	margin-top:15px;
+}
+hr {
+	box-shadow:none;
+	border:1px solid #ddd;
+	height:1px;
+	margin:10px 0 20px;	
+}
