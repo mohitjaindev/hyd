@@ -68,6 +68,12 @@
 		font-size: 70px;
 		margin-bottom: 20px;	
 	}
+	.slider-content h1, 
+	.slider-content h2, 
+	.slider-content h3 {
+		font-size: 60px;
+		margin-bottom: 20px;	
+	}
 	.slider-contentbox {
 		font-size: 16px;	
 	}
@@ -173,6 +179,11 @@
 	.slider-content h2, 
 	.slider-content h3 {
 		font-size: 50px;	
+	}
+	.slider-content h1, 
+	.slider-content h2, 
+	.slider-content h3 {
+		font-size: 44px;	
 	}
 	.navigation-menu > li > a {
 		font-size: 13px;
@@ -334,7 +345,7 @@
 		-moz-box-shadow: none;
 		box-shadow: none;
 		background: #fff;
-		border-bottom: 5px solid #3a9ac8;
+		border-bottom: 5px solid #22d1ff;
 		height: -webkit-calc(100vh - 68px);
 		height: calc(100vh - 68px);
 		overflow-y: auto;
@@ -347,7 +358,7 @@
 	.navigation-menu > li a:hover, 
 	.navigation-menu > li a:focus {
 		background: none;
-		color: #3a9ac8;	
+		color: #22d1ff;	
 	}
 	.navigation-menu > li:hover {
 		background: none;	
@@ -361,7 +372,7 @@
 		font-size: 16px;
 	}
 	.navigation-menu > li.active > a {
-		background: #3a9ac8;
+		background: #22d1ff;
 		color: #fff;
 	}
 	.navigation-menu > li.active .navtrigger {
@@ -655,5 +666,8 @@
 	}
 	.maintenance-box {
 		font-size: 15px;	
+	}
+	.inner-content {
+		padding-top: 100px;
 	}
 } 
